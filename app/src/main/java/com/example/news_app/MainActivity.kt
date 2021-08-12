@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
 
 
     private fun fetchData() {
-       val url="https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=1905de9b24cc4e32ac89c7af3f8caff2"
+       val url="https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY}"
         val jsonObjectRequest= JsonObjectRequest(
             Request.Method.GET,
             url,
